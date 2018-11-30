@@ -1,165 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
+    <title>main page</title>
 
-/* Full-width input fields */
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-/* Set a style for all buttons */
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-button:hover {
-    opacity: 0.8;
-}
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
-/* Extra styles for the cancel button */
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
 
-/* Center the image and position the close button */
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
 
-.container {
-    padding: 16px;
-}
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
 
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button (x) */
-.close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: red;
-    cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
-    to {-webkit-transform: scale(1)}
-}
-    
-@keyframes animatezoom {
-    from {transform: scale(0)} 
-    to {transform: scale(1)}
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-}
-</style>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="hero-content">
+        <header class="site-header">
 
+            <div class="nav-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-lg-3">
+                            <div class="site-branding">
+                                <h1 class="site-title"><a href="index.html" rel="home">Dream<span>Host</span></a></h1>
+                            </div><!-- .site-branding -->
+                        </div><!-- .col -->
 
+                        <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
+                            <nav class="site-navigation flex justify-content-end align-items-center">
+                                <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                    <li class="current-menu-item"></li>
+                                   
+                                     <li><a href="#">home</a></li>
+                                     <li><a href="about_1.html">About</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="signup.html">Register</a></li>
+                                </ul>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+                                <div class="hamburger-menu d-lg-none">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div><!-- .hamburger-menu -->
 
-<div id="id01" class="modal">
-  
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      
-    </div>
+                                
+                            </nav><!-- .site-navigation -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .nav-bar -->
+        </header><!-- .site-header -->
 
-    <div class="container">
-      <label for="Mobile No."><b>Mobile No.</b></label>
-      <input type="text" placeholder="Enter Mobile No." name="Mobile No." required>
+        <div class="hero-content-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="hero-content-wrap flex flex-column justify-content-center align-items-start">
+                            <header class="entry-header">
+                               
+                                <h1>Test Your Potential</h1>
+                            </header><!-- .entry-header -->
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+                            <footer class="entry-footer read-more">
+                                <a href="2.html">Get More Info</a>
+                            </footer><!-- .entry-footer -->
+                        </div><!-- .hero-content-wrap -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .hero-content-hero-content-overlay -->
+    </div><!-- .hero-content -->
+
+    
         
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
+            
 
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
+    <footer class="site-footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+      
 
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
+                   
+                   
+                        <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md">
+                        <div class="foot-contact">
+                            <h2>Contact Us</h2>
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
+                            <ul>
+                                <li>Email:guptanidhi9881@gmail.com</li>
+                                <li>Phone: (+91)9876543211</li>
+                                <li>Address:  680/7 Panchkula Haryana,India </li>
+                            </ul>
+                        </div><!-- .foot-contact -->
+                </div><!-- .col -->
+                
+               <div class="col-12 col-md-6 col-lg-3 mt-5 mt-lg-0 align-items-center">
+                        <div class="quick-links flex flex-wrap justify-content-center  align-items-center">
+                            <h2 class="w-100">Quick Links</h2>
+
+                            <ul class="w-50">
+                                <li><a href="#">About </a></li>
+                                <li><a href="#">Terms of Use </a></li>
+                                <li><a href="#">Privacy Policy </a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+
+                            <ul class="w-50">
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Forums</a></li>
+                                <li><a href="#">Language Packs</a></li>
+                                <li><a href="#">Release Status</a></li>
+                            </ul>
+                        </div><!-- .quick-links -->
+                    </div>
+                <!-- .col -->
+
+                 <div class="col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
+                        <div class="follow-us">
+                            <h2>Follow Us</h2>
+
+                            <ul class="follow-us flex flex-wrap align-items-center">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div><!-- .quick-links -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        <!-- .footer-widgets -->
+    
+
+        <div class="footer-bar">
+            <div class="container">
+                <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <div class="download-apps flex flex-wrap justify-content-center justify-content-lg-start align-items-center">
+                            <a href="#"><img src="images/app-store.png" alt=""></a>
+                            <a href="#"><img src="images/play-store.png" alt=""></a>
+                        </div><!-- .download-apps -->
+
+                    </div>
+
+                    <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+                        <div class="footer-bar-nav">
+                            <ul class="flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                                
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div><!-- .footer-bar-nav -->
+                    </div><!-- .col-12 -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-bar -->
+    </footer><!-- .site-footer -->
+
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/swiper.min.js'></script>
+<script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+<script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
 
 </body>
 </html>
